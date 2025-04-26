@@ -1,0 +1,93 @@
+/* Base font & color */
+* {
+  font-family: "Noto Sans Mono CJK SC", "GeistMono", monospace;
+  font-size: 14px;
+  color: white;
+}
+
+/* Main bar container */
+window#waybar {
+  background-color: rgba(0, 0, 0, 0.35);
+  /*border-bottom: 1px solid white;*/
+  border-radius: 0px;
+  margin: 0px;
+}
+
+/* Workspace buttons */
+#workspaces button {
+  margin: 4px 4px;
+  padding: 0px 2px;
+  background: transparent;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  transition: background 0.3s, color 0.2s;
+}
+
+#workspaces button:hover {
+  background: rgba(0, 0, 0, 0.1);
+  border-color: white;
+}
+
+#workspaces button.active,
+#workspaces button.active label {
+  background: white;
+  color: black;
+  font-weight: bold;
+}
+
+/* Other modules */
+#custom-window {
+  margin-left: 12px;
+}
+
+#clock {
+  font-weight: bold;
+}
+
+#network,
+#bluetooth,
+#battery,
+#custom-power,
+#clock,
+#custom-window {
+  margin: 4px 4px;
+  padding: 2px 5px;
+  border-radius: 6px;
+  padding: 0 12px;
+  transition: background 0.2s, color 0.2s;
+}
+
+/* Connected/Enabled state */
+#network.up,
+#network.wifi,
+#battery,
+#custom-power,
+#bluetooth.on,
+#bluetooth.connected,
+#bluetooth.enabled {
+  background: white;
+  color: black;
+}
+
+#network.down,
+#network.disconnected,
+#bluetooth.off {
+  background: transparent;
+  color: white;
+}
+
+
+#bluetooth.on:hover,
+#bluetooth.connected:hover,
+#network.up:hover,
+#network.wifi:hover,
+#battery:hover,
+#custom-power:hover,
+#clock:hover,
+#custom-window:hover,
+#bluetooth.off:hover,
+#bluetooth.down:hover {
+  background: rgba(0, 0, 0, 0.1);
+  color: white;
+  border: 1px solid white;
+}
