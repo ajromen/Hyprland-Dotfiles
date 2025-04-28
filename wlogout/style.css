@@ -27,7 +27,7 @@ by Stephan Raabe (2023)
 }
 
 window {
-    background-color: rgba(0, 0, 0, 0.5); /* transparent black */
+    background-color: rgba(0, 0, 0, 0.1); /* transparent black */
    /* background-image: url("/tmp/wlogout-blur.png");*/ 
     font-size: 12pt;
     font-weight: bold;

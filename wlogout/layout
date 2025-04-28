@@ -9,7 +9,7 @@
     "label" : "logout",
     "action" : "hyprctl dispatch exit 0",
     "text" : "Logout",
-    "keybind" : "e"
+    "keybind" : "o"
 }
 
 {
@@ -30,7 +30,7 @@
 {
     "label" : "reboot",
     "action" : "reboot",
-    "text" : "Reboot",
+    "text" : "Restart",
     "keybind" : "r"
 }
 
