@@ -35,10 +35,12 @@ button {
 /* Notification */
 
 .notification {
-    border: 3px solid @bordercolor;
+    border: 1px solid @bordercolor;
 	border-radius: 10px;
-    padding:10px;
-    margin:10px;x
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
 }
 
 .notification-default-action:hover,
